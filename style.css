@@ -5,6 +5,10 @@
     font-family:Arial, sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#f5edf2;
 }
@@ -12,6 +16,7 @@ body{
 /* HEADER */
 
 header{
+    position:relative;
     background:#09097d;
     color:white;
     text-align:center;
@@ -25,6 +30,39 @@ header h1{
 
 header p{
     font-size:20px;
+}
+
+/* MENU BUTTON */
+
+.menu-btn{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:40px;
+    color:white;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* HORIZONTAL NAVBAR */
+
+.navbar{
+    display:none;
+    margin-top:25px;
+    text-align:center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:22px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#ff7b47;
 }
 
 /* HERO */
@@ -194,4 +232,13 @@ footer{
         width:250px;
         height:250px;
     }
+
+    .menu-btn{
+        font-size:32px;
+    }
+
+    .navbar a{
+    display:block;
+    margin:10px 0;
+}
 }

@@ -11,9 +11,26 @@
     <!-- Header -->
 
     <header>
-        <h1>My Portfolio</h1>
-        <p>AI & Machine Learning Enthusiast | Computer Science Engineering Student</p>
-    </header>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <h1>My Portfolio</h1>
+
+    <p>
+        AI & Machine Learning Enthusiast |
+        Computer Science Engineering Student
+    </p>
+
+    <nav id="navMenu" class="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+</header>
 
     <!-- Hero Section -->
 
@@ -42,7 +59,7 @@
 
     <!-- About -->
 
-    <section class="card">
+    <section id="about" class="card">
 
         <h2>About Me</h2>
 
@@ -57,7 +74,7 @@
 
     <!-- Skills -->
 
-    <section class="card">
+    <section id="skills" class="card">
 
         <h2>Skills</h2>
 
@@ -78,7 +95,7 @@
 
     <!-- Projects -->
 
-    <section class="card">
+    <section id="projects" class="card">
 
         <h2>Projects</h2>
 
@@ -122,7 +139,7 @@
 
     <!-- Contact -->
 
-    <section class="card">
+    <section id="contact" class="card">
 
         <h2>Contact</h2>
 
@@ -130,15 +147,30 @@
         <p><strong>Phone:</strong> +91 9526620183</p>
         <p><strong>Location:</strong> Kerala, India</p>
 
-        <form>
+        <form id="contactForm">
 
-            <input type="text" placeholder="Enter Your Name">
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Your Name"
+                required
+            >
 
-            <input type="email" placeholder="Enter Your Email">
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Your Email"
+                required
+            >
 
-            <textarea placeholder="Enter Your Message"></textarea>
+            <textarea
+                id="message"
+                placeholder="Enter Your Message"
+            ></textarea>
 
-            <button type="submit">Send Message</button>
+            <button type="submit">
+                Send Message
+            </button>
 
         </form>
 
@@ -149,6 +181,8 @@
     <footer>
         <p>© 2026 Akhila J Puttanani</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
